@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
-  palette: {
-    primary: '#fc01ff',
-    accent: '#66f7db',
+  breakpoint: {
+    small: '425px',
+    medium: '768px',
+    large: '1024px',
   },
   font: {
     family: `'Lato', sans-serif`,
@@ -13,17 +14,21 @@ export const theme = {
     sizeMediumScreen: `calc(1vmin + 1vmax)`,
     sizeBigScreen: `calc(1vmin + 1vmax)`,
   },
-  breakpoint: {
-    small: '425px',
-    medium: '768px',
-    large: '1024px',
+  palette: {
+    accent: '#66f7db',
+    primary: '#fc01ff',
+    primaryRGB: '255, 1, 255',
   },
 };
 
 export const GlobalStyle = createGlobalStyle`
   :root {    
-    --palette-primary: ${theme.palette.primary}
-    --palette-accent: ${theme.palette.accent}
+    --primary: ${theme.palette.primary};
+    --primary: ${theme.palette.primary};
+    --accent: ${theme.palette.accent};
+    --filter: rgba(255,255,255, 0.5);
+    --text: #333;
+    --text-disable: #888;
   }
   html,body {
     all: unset;    
