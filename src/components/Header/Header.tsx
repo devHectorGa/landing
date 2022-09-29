@@ -2,7 +2,9 @@ import { HeaderContainer, HeaderLink, HeaderSections, Logo } from './Header.styl
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Logo />
+      <HeaderLink to="/">
+        <Logo />
+      </HeaderLink>
 
       <HeaderSections>
         <HeaderLink to="/vender">Vender</HeaderLink>

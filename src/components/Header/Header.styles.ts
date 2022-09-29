@@ -5,7 +5,6 @@ import { ReactComponent as LogoSVG } from '../../assets/logo.svg';
 export const HeaderContainer = styled.div`
   display: flex;
   height: 2vmin;
-  align-items: center;
   justify-content: space-around;
   padding: 2vmin 0;
   background-color: var(--filter);

@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary: ${theme.palette.primary};
     --primary: ${theme.palette.primary};
     --accent: ${theme.palette.accent};
-    --filter: rgba(255,255,255, 0.5);
+    --filter: rgba(255,255,255, 0.8);
     --text: #333;
     --text-disable: #888;
   }
