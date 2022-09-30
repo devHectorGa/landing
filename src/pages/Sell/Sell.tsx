@@ -1,20 +1,20 @@
-import { FC, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { FC } from 'react';
+import { useSellNavigation } from '../../hooks/useSellNavigation';
 import { SellContainer } from './Sell.styles';
 
 export const Sell: FC = () => {
-  const { section, ...rest } = useParams();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!section) navigate(`/${rest['*']}/hola`);
-  }, [section]);
-
-  console.log(section);
+  const { activeSection, index, length, handleNextPage, handlePrevPage } = useSellNavigation();
 
   return (
     <SellContainer>
-      <h1>Vender</h1>
+      <h2>Vender</h2>
+      <p>
+        Paso {index + 1} de {length}
+      </p>
+      <p>{activeSection.description}</p>
+      {activeSection.element}
+      <button onClick={handlePrevPage}>Prev</button>
+      <button onClick={handleNextPage}>Next</button>
     </SellContainer>
   );
 };

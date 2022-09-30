@@ -1,5 +1,5 @@
-import { RouteType } from '../components/DynamicRoutes/DynamicRoutes.types';
 import { Home, Sell } from '../pages';
+import { RouteType } from './routes.types';
 
 export const routes: RouteType[] = [
   { element: <Home />, path: '/' },

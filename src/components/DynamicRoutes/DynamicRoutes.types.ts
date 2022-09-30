@@ -1,9 +1,5 @@
-import { FC, PropsWithChildren } from 'react';
-import { RoutesProps as LibRoutesProps, RouteProps } from 'react-router-dom';
-
-export type RouteType = {
-  layout?: FC<PropsWithChildren>;
-} & RouteProps;
+import { RoutesProps as LibRoutesProps } from 'react-router-dom';
+import { RouteType } from '../../routes/routes.types';
 
 export type RoutesProps = {
   routes: RouteType[];
