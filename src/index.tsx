@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = createRoot(document.getElementById('root') as HTMLElement);
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '*',
     element: <App />,
   },
 ]);

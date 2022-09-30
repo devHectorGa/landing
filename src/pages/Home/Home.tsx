@@ -1,4 +1,4 @@
-import { Button } from '../components';
+import { Button } from '../../components';
 import { HomeContainer, HomeWrapper } from './Home.styles';
 
 export const Home = () => (
