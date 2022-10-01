@@ -9,6 +9,7 @@ export type SellRouteType = {
   order: number;
   description: string;
   name: string;
+  label?: string;
 } & RouteType;
 
 export enum SellRoutesEnum {

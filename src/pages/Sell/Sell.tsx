@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, cloneElement, ReactElement } from 'react';
 import { useSellNavigation } from '../../hooks/useSellNavigation';
 import { SellContainer } from './Sell.styles';
 
@@ -12,7 +12,7 @@ export const Sell: FC = () => {
         Paso {index + 1} de {length}
       </p>
       <p>{activeSection.description}</p>
-      {activeSection.element}
+      {cloneElement(activeSection.element as ReactElement, activeSection)}
       <button onClick={handlePrevPage}>Prev</button>
       <button onClick={handleNextPage}>Next</button>
     </SellContainer>
